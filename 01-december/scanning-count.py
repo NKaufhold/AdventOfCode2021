@@ -5,10 +5,9 @@ count = 0
 prev_val = None
 
 for line in input_file:
-    if prev_val and prev_val < line:
+    value = int(line)
+    if prev_val and prev_val < value:
         count = count + 1
-    #else:
-        #print("{} >= {}".format(prev_val, line))
-    prev_val = line
+    prev_val = value
 
 print(count)
