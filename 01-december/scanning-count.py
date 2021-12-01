@@ -10,4 +10,5 @@ for line in input_file:
         count = count + 1
     prev_val = value
 
+input_file.close()
 print(count)
