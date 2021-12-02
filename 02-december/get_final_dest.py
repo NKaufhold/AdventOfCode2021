@@ -1,4 +1,5 @@
-input_file = open("test_course.txt")
+#input_file = open("test_course.txt")
+input_file = open("real_course.txt")
 
 # Let's try this with a HashMap/Dictionary:
 # Key = Direction
