@@ -25,16 +25,19 @@ for line in input_file:
         for i in range(len(count_num)):
             count_num[i] += chars[i]
 
-
-print(count_num)
+input_file.close()
+#print(count_num)
 
 # Let's calculate the binary values of the rates:
 gamma_rate_bin = [1 if one > (count_line-one) else 0 for one in count_num]
-print(gamma_rate_bin)
+#print(gamma_rate_bin)
 gamma_rate = convert(gamma_rate_bin)
-print(gamma_rate)
+#print(gamma_rate)
 
 epsilon_rate_bin = [1 if g == 0 else 0 for g in gamma_rate_bin]
-print(epsilon_rate_bin)
+#print(epsilon_rate_bin)
 epsilon_rate = convert(epsilon_rate_bin)
-print(epsilon_rate)
+#print(epsilon_rate)
+
+result = gamma_rate * epsilon_rate
+print(result)
